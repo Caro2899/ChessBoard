@@ -8,30 +8,10 @@ If you are not familiar with the basic rules of chess, you may read the rules [h
 Brief overview: The class Board is a chessboard representing an 8x8 grid of squares, which are pointers that may point to Piece-derived objects. The classes deriving Piece will be implemented to represent different movement categories of chess pieces, utilizing several custom data types such as Position, Vector and BooleanMap for convenient calculation.
 
 Utilities
-
 The files utility.h and utility.cpp define some constants, structs and classes that will be helpful for processing chess piece classes.
 enum _FILE { _A, _B, _C, _D, _E, _F, _G, _H };
 enum _RANK { _1, _2, _3, _4, _5, _6, _7, _8 };
 The enums _FILE and _RANK represent the coordinates of the chessboard, which is an 8x8 grid. For example, arr[_8][_A] is the same as arr[7][0], and represents the following cell on the board:
----------------------------------
-| x |   |   |   |   |   |   |   | 8
----------------------------------
-|   |   |   |   |   |   |   |   | 7
----------------------------------
-|   |   |   |   |   |   |   |   | 6
----------------------------------
-|    |   |   |   |   |   |   |   | 5
----------------------------------
-|   |   |   |   |   |   |   |   | 4
----------------------------------
-|   |   |   |   |   |   |   |   | 3
----------------------------------
-|   |   |   |   |   |   |   |   | 2
----------------------------------
-|   |   |   |   |   |   |   |   | 1
----------------------------------
-  a   b   c   d   e   f   g   h
-  //
   
 Note that the board is displayed in a similar orientation as an actual chessboard (starting from rank 8).
 struct Position {
