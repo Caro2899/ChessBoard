@@ -10,7 +10,6 @@ Brief overview: The class Board is a chessboard representing an 8x8 grid of squa
 1) 
 Utilities
 The files utility.h and utility.cpp define some constants, structs and classes that will be helpful for processing chess piece classes.
-
 enum _FILE { _A, _B, _C, _D, _E, _F, _G, _H };
 enum _RANK { _1, _2, _3, _4, _5, _6, _7, _8 };
 The enums _FILE and _RANK represent the coordinates of the chessboard, which is an 8x8 grid. For example, arr[_8][_A] is the same as arr[7][0], and represents the following cell on the board:
